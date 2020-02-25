@@ -3,20 +3,22 @@ main {
   padding-top: 50px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 
   .album-container {
     background-color: $mainBlack;
     color: $txtColor;
     text-align: center;
     padding: 20px;
+    margin-top: 20px;
+    max-width: 240px;
     display: flex;
     flex-direction: column;
     align-items: center;
 
     img {
-      height: 250px;
-      width: 250px;
+      height: 200px;
+      width: 200px;
       margin-bottom: 10px;
     }
 
