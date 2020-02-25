@@ -1,0 +1,13 @@
+header {
+  width: 100%;
+  background-color: $mainBlack;
+  padding: 10px 0;
+
+  .header-container {
+    @include page-format;
+
+    img {
+      height: 50px;
+    }
+  }
+}
