@@ -1,0 +1,31 @@
+main {
+  @include page-format;
+  padding-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .album-container {
+    background-color: $mainBlack;
+    color: $txtColor;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      height: 250px;
+      width: 250px;
+      margin-bottom: 10px;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    h3 {
+      color: $titleColor;
+    }
+  }
+}

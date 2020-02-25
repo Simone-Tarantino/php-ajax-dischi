@@ -19,7 +19,14 @@
     <!-- /header -->
     <!-- main -->
     <main>
-
+      <div class="album-container">
+        <img src="https://dillinger.it/wp-content/uploads/2019/03/Cuccioli-di-topo-di-Praga.jpg" alt="">
+        <ul>
+          <li><h3>Ciao ciao</h3></li>
+          <li>aaaa</li>
+          <li>1999</li>
+        </ul>
+      </div>
     </main>
     <!-- /main -->
     <!-- footer -->
