@@ -11,6 +11,7 @@
     <header>
       <div class="header-container">
         <img src="img/spotify-sketch.svg" alt="logo spotify">
+        <input id="search" type="text" name="" value="">
       </div>
     </header>
     <!-- /header -->

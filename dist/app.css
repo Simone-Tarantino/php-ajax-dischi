@@ -18,6 +18,9 @@ header {
 header .header-container {
   width: 1290px;
   margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 header .header-container img {
