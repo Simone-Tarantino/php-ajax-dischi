@@ -22,14 +22,13 @@
     <!-- template -->
     <script id="entry-template" type="text/x-handlebars-template">
       <div class="album-container">
-          <img src="" alt="">
+          <img src="{{poster}}" alt="{{title}}">
           <ul>
-            <li><h3></h3></li>
-            <li></li>
-            <li></li>
+            <li><h3>{{title}}</h3></li>
+            <li>{{author}}</li>
+            <li>{{year}}</li>
           </ul>
       </div>
-    }
     </script>
 
   </body>

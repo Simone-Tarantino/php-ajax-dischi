@@ -15815,17 +15815,31 @@ module.exports = g;
 
 var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 
-var handlebars = __webpack_require__(/*! handlebars */ "./node_modules/handlebars/dist/cjs/handlebars.js");
+var Handlebars = __webpack_require__(/*! handlebars */ "./node_modules/handlebars/dist/cjs/handlebars.js");
 
 $(document).ready(function () {
   $.ajax({
     "url": "http://localhost/php-ajax-dischi/server.php",
     "method": "GET",
-    success: function success(data) {},
+    success: function success(data) {
+      getAndPrintCd(data);
+    },
     error: function error() {
       alert("C'è stato un'errore");
     }
   });
+
+  function getAndPrintCd(cdsList) {
+    var source = $("#entry-template").html();
+    var template = Handlebars.compile(source);
+
+    for (var i = 0; i < cdsList.length; i++) {
+      var singleCd = cdsList[i];
+      console.log(singleCd);
+      var html = template(singleCd);
+      $("main").append(html);
+    }
+  }
 });
 
 /***/ }),
